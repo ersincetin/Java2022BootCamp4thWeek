@@ -37,7 +37,7 @@ public class LanguageController {
         this.languageManager.update(language, languageId);
     }
 
-    @DeleteMapping(value = "/{id}")
+    @DeleteMapping(value = "/delete/{languageId}")
     public void deleteLanguage(@PathVariable("languageId") int languageId) throws Exception {
         this.languageManager.delete(languageId);
     }
